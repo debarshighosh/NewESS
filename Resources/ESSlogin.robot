@@ -25,5 +25,3 @@ Redirect to Attendance
     wait until element is visible  xpath=//a[@class="text-5 text-secondary ng-star-inserted"]/span[text()='Attendance']     30s
     click element  xpath=//a[@class="text-5 text-secondary ng-star-inserted"]/span[text()='Attendance']
     click element  xpath=//a[@class="text-5 text-secondary text-regular"]/span[text()='Attendance Info']
-
-    test python text
