@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.1 on win32)" generated="20190417 18:44:05.790" rpa="false">
+<suite id="s1" name="ESSlogin" source="C:\Users\Debarshi\PycharmProjects\NewESS\Tests\ESSlogin.robot">
+<test id="s1-t1" name="NewESS login and navigate">
+<kw name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190417 18:44:07.491" level="INFO">Opening browser 'chrome' to base url 'http://attendance1.esstest.gr8hr.biz/uas/portal/auth/login'.</msg>
+<status status="PASS" starttime="20190417 18:44:07.491" endtime="20190417 18:44:14.341"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190417 18:44:14.341" endtime="20190417 18:44:15.464"></status>
+</kw>
+<status status="PASS" starttime="20190417 18:44:07.491" endtime="20190417 18:44:15.464"></status>
+</kw>
+<kw name="Log In" library="ESSlogin">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=input[id="username"]</arg>
+</arguments>
+<status status="PASS" starttime="20190417 18:44:15.465" endtime="20190417 18:44:16.668"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=input[id="username"]</arg>
+<arg>5003</arg>
+</arguments>
+<msg timestamp="20190417 18:44:16.669" level="INFO">Typing text '5003' into text field 'css=input[id="username"]'.</msg>
+<status status="PASS" starttime="20190417 18:44:16.669" endtime="20190417 18:44:16.759"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>sa</arg>
+</arguments>
+<msg timestamp="20190417 18:44:16.760" level="INFO">Typing text 'sa' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20190417 18:44:16.759" endtime="20190417 18:44:16.843"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=button[type="submit"]</arg>
+</arguments>
+<msg timestamp="20190417 18:44:16.844" level="INFO">Clicking element 'css=button[type="submit"]'.</msg>
+<status status="PASS" starttime="20190417 18:44:16.844" endtime="20190417 18:44:16.939"></status>
+</kw>
+<status status="PASS" starttime="20190417 18:44:15.465" endtime="20190417 18:44:16.939"></status>
+</kw>
+<kw name="Redirect to Feeds" library="ESSlogin">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=//a/span[text()='Feeds']</arg>
+</arguments>
+<status status="PASS" starttime="20190417 18:44:16.958" endtime="20190417 18:44:33.230"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a/span[text()='Feeds']</arg>
+</arguments>
+<msg timestamp="20190417 18:44:33.230" level="INFO">Clicking element 'xpath=//a/span[text()='Feeds']'.</msg>
+<status status="PASS" starttime="20190417 18:44:33.230" endtime="20190417 18:44:33.315"></status>
+</kw>
+<status status="PASS" starttime="20190417 18:44:16.957" endtime="20190417 18:44:33.315"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20190417 18:44:07.490" endtime="20190417 18:44:33.316" critical="yes"></status>
+</test>
+<doc>Demo info about the cases</doc>
+<status status="PASS" starttime="20190417 18:44:05.794" endtime="20190417 18:44:33.331"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ESSlogin">ESSlogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
