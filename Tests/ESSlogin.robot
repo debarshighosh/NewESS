@@ -19,6 +19,6 @@ NewESS login and navigate
 
     #ESSlogin.Redirect to Attendance
 
-    #ESSlogin.Redirect to People Page
+    ESSlogin.Redirect to People Page
 
     #Common.End Web Test
